@@ -376,11 +376,31 @@
             <h2>Sign Up For Newsletter</h2>
             <p>Get E-mail updates about our latest shop and <span>specil offers</span></p>
         </div>
-
-        <div class="form">
-            <input type="text" placeholder="Your email address">
-            <button class="normal">Sign Up</button>
-        </div>
+        
+        <div class="container">
+            <h2>Welcome!</h2>
+            <button id="signupButton">Sign Up</button>
+            <div id="registrationFormContainer" style="display: none;">
+              <h2>Registration Form</h2>
+              <form id="registrationForm" action="/register" method="POST">
+                <div class="form-group">
+                  <label for="username">Username:</label>
+                  <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                  <label for="password">Password:</label>
+                  <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit">Register</button>
+              </form>
+            </div>
+          </div>
+          
+        
 
     </section>
     <script src="script.js"></script>

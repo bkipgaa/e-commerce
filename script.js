@@ -17,3 +17,36 @@ if (close) {
         nav.classList.remove('active');
     });
 }
+
+// Sign UP Code function
+
+document.getElementById('signupButton').addEventListener('click', function() {
+    document.getElementById('registrationFormContainer').style.display = 'block';
+  });
+  
+  document.getElementById('registrationForm').addEventListener('submit', function(event) {
+    var username = document.getElementById('username').value;
+    var email = document.getElementById('email').value;
+    var password = document.getElementById('password').value;
+    var errorContainer = document.getElementById('errorContainer');
+    var errorMessage = '';
+  
+    if (!username) {
+      errorMessage += 'Please enter your username.\n';
+    }
+  
+    if (!email) {
+      errorMessage += 'Please enter your email.\n';
+    }
+  
+    if (!password) {
+      errorMessage += 'Please enter your password.\n';
+    }
+  
+    if (errorMessage) {
+      errorContainer.textContent = errorMessage;
+      event.preventDefault();
+    }
+  });
+  
+  

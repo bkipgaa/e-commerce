@@ -461,9 +461,15 @@ background-color: #041e42;}
     border-top-left-radius:0;
    border-bottom-left-radius:0;   
 }
+
+#signupForm {
+    display: none;
+}
+
 #close {
     display:none;
 }
+
 
 
 /* Start Media Query*/
